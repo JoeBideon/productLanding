@@ -1,0 +1,182 @@
+html{
+    font-size: 10px;
+    font-family: sans-serif
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: ghostwhite;
+    background: black;
+}
+/*Navigation bar*/
+nav{
+    background-color: ghostwhite;
+    color: black;
+    top:0;
+    position: sticky;
+}
+ul{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    }
+
+    li a{
+        float:right;
+        background-color: rgb(212, 209, 209);
+        display:flex;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        padding:15px;
+        color: rgb(19, 18, 18);
+    }
+a:hover{
+    transition-duration: .4s;
+    background: black;
+}
+.nav-left{
+    float: left;
+    margin: 0 5px;
+}
+
+/*Header*/
+header{
+    background: url(https://www.dropbox.com/s/y0hejtz59v8t97l/Pizza.jpg?dl=1);
+    background-size: cover;
+    padding: 125px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*text*/
+h3{
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+}
+p{
+    font-size: 1.8rem;
+    margin: 15px 15px 30px 15px;
+    line-height: 25px;
+    text-align: center;
+}
+/*image*/
+about img{
+    display: block;
+    margin: 10px auto 50px;
+    max-width: 30%;
+    min-width: 300px;
+    border: solid 5px white;
+   border-radius: 10px;
+}
+
+/*Product display*/
+#productdisplay{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+}
+productdisplay{
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+flex-grow: 1;
+}
+/*the actual items themselves*/
+.product{
+    background: rgb(226, 226, 231);
+    padding: 1% 1%;
+    margin: 1%;
+    border-radius: 5px;
+  max-width: 25%;
+  min-width: 300px;
+  max-height: auto;
+  color: black;
+  text-align: center;
+}
+h4{
+    font-size: 2rem;
+    margin: 15px 0;
+}
+p{
+    margin-top: 0;
+}
+/*images*/
+.product img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    min-width: 10%;
+}
+/*form*/
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    background: gray;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 350px;
+    max-height: 300px;
+    border: none;
+    border-radius: 5px;
+}
+h3{
+    font-size: 2rem;
+}
+label{
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 20px;
+}
+input{
+    margin: .5rem;
+    border: none;
+    width: 30rem;
+    height: 3rem;
+    border-radius: .3rem;
+    font-size: 12px;
+}
+::placeholder{
+    text-align: center;
+}
+#submit{
+    width: 20rem;
+    color: gray;
+    margin-bottom: 20px;
+    transition-duration: .2s;
+}
+#submit:hover{
+    cursor: pointer;
+    background: orangered;
+    transition-duration: .2s;
+    color: white;
+}
+/*footer*/
+footer{
+    background: gray;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    line-height: 20px;
+    font-size: 1.2rem;
+}
+footer h5{
+    font-size: 1.5rem;
+}
+footer ul{
+    padding: 25px;
+}
+/*makes text align center on small screens*/
+@media(max-width: 600px) {
+    about, header{
+        text-align: center;
+    }
+  }
